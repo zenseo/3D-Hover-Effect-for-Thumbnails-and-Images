@@ -40,3 +40,12 @@ body {
 	/*rotate the surface 90deg on the bottom axis*/
 	transform: rotateX(90deg); transform-origin: bottom;
 }
+/*label style*/
+.thumb a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
